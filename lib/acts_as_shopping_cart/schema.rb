@@ -10,6 +10,7 @@ module ActsAsShoppingCart
       string  :item_type      # Holds the type of the object, for polymorphism
       integer :price_cents, default: 0, null: false  # Holds the price of the item
       string  :price_currency, default: "USD", null: false # Holds the currency for the price
+      string  :currency, default: "USD", null: false # Holds the currency for the price
     end
   end
 end
